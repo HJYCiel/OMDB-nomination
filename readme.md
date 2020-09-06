@@ -1,6 +1,7 @@
 ## Introduction
 
 The purpose of this app is for users to navigate movies on OMDB and nominate them.
+
 Demo link: https://movie-nomination-omdb.herokuapp.com/test_page.html
 
 ## Special effects
