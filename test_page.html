@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet/less" type="text/css" href="./style.less" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/less" ></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+    <title>N-OMDB</title>
+
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="Presentation1.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+
+      <div id="dialog" >
+        <p>Reached nomination limit.</p>
+      </div>
+
+    <div class="cntr" id="search_box">
+        <div class="cntr-innr">
+            <p>Search for movie title</p>
+          <label class="search" for="inpt_search">
+                <input id="inpt_search" type="text" onkeypress="Javascript: if (event.keyCode==13) search_movie()" />
+            </label> <span class="material-icons" id="movie_con">movie</span><span id="badge" class="my-badge"></span>
+            <div id="filter-records"></div>
+        </div>
+    </div>
+    
+
+    <div class="row">
+        <table id="c1" class="column1">
+          
+        </table>
+
+      </div>
+      <div class="nom-table">
+        <strong id="empty_list"> Your nomination list is empty.</strong>        
+        <strong id="nom_list">Nominated Movies</strong>
+        <table id="c2" class="column2" >
+         
+        </table>
+    </div>
+
+    <div class="posters"></div>
+
+    <script type="text/javascript" src="./script.js"></script>
+       
+</body>
+</html>
